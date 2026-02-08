@@ -45,3 +45,38 @@ body {
 .animate-float {
   animation: float linear infinite;
 }
+
+@keyframes float-in-place {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(6px, -20px);
+  }
+  50% {
+    transform: translate(-4px, -12px);
+  }
+  75% {
+    transform: translate(8px, -24px);
+  }
+}
+
+.animate-float-in-place {
+  animation: float-in-place 5s ease-in-out infinite;
+}
+
+@keyframes meme-rise {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(15deg);
+    opacity: 1;
+  }
+}
+
+.animate-meme-rise {
+  animation: meme-rise linear forwards;
+}
